@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buyer Dashboard - Reacoda</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <img src="images/logo.png" alt="Reacoda Logo" class="logo">
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li class="active">
+                        <a href="#"><i class="fas fa-home"></i> Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-shopping-cart"></i> Browse Crops</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-box"></i> My Orders</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-heart"></i> Favorites</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-wallet"></i> Payments</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-cog"></i> Settings</a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="top-bar">
+                <div class="search-bar">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search crops, farmers...">
+                </div>
+                <div class="user-menu">
+                    <div class="notifications">
+                        <i class="fas fa-bell"></i>
+                        <span class="badge">5</span>
+                    </div>
+                    <div class="user-profile">
+                        <img src="images/buyer-avatar.png" alt="Buyer Avatar">
+                        <span>John Buyer</span>
+                    </div>
+                </div>
+            </header>
+
+            <div class="dashboard-content">
+                <!-- Stats Cards -->
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-seedling"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>Active Crops</h3>
+                            <p class="stat-number">12</p>
+                            <p class="stat-change positive">+2 new</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-truck"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>Pending Orders</h3>
+                            <p class="stat-number">8</p>
+                            <p class="stat-change neutral">No change</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-wallet"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>Monthly Revenue</h3>
+                            <p class="stat-number">$12,450</p>
+                            <p class="stat-change positive">+15.3%</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>Rating</h3>
+                            <p class="stat-number">4.8</p>
+                            <p class="stat-change positive">+0.2</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Actions -->
+                <div class="quick-actions">
+                    <h3>Quick Actions</h3>
+                    <div class="actions-grid">
+                        <button class="action-btn">
+                            <i class="fas fa-plus"></i>
+                            Add New Crop
+                        </button>
+                        <button class="action-btn">
+                            <i class="fas fa-file-alt"></i>
+                            View Reports
+                        </button>
+                        <button class="action-btn">
+                            <i class="fas fa-truck"></i>
+                            Schedule Delivery
+                        </button>
+                        <button class="action-btn">
+                            <i class="fas fa-calendar"></i>
+                            View Calendar
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Recent Orders -->
+                <div class="recent-orders">
+                    <div class="section-header">
+                        <h3>Recent Orders</h3>
+                        <a href="#" class="view-all">View All</a>
+                    </div>
+                    <div class="table-responsive">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Order ID</th>
+                                    <th>Farmer</th>
+                                    <th>Crop</th>
+                                    <th>Quantity</th>
+                                    <th>Amount</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>#ORD-001</td>
+                                    <td>John Farmer</td>
+                                    <td>Organic Tomatoes</td>
+                                    <td>100 kg</td>
+                                    <td>$450.00</td>
+                                    <td><span class="status pending">Pending</span></td>
+                                </tr>
+                                <tr>
+                                    <td>#ORD-002</td>
+                                    <td>Jane Farmer</td>
+                                    <td>Lettuce</td>
+                                    <td>50 kg</td>
+                                    <td>$200.00</td>
+                                    <td><span class="status completed">Completed</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="js/buyer-dashboard.js"></script>
+</body>
+</html> 

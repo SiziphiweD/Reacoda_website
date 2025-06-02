@@ -1,0 +1,73 @@
+.welcome-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    padding: 2rem;
+}
+
+.welcome-content {
+    text-align: center;
+    color: white;
+    animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.welcome-logo {
+    margin-bottom: 2rem;
+}
+
+.welcome-logo img {
+    height: 80px;
+    animation: bounce 1s ease-in-out;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+.welcome-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    animation: slideUp 0.5s ease-out 0.5s both;
+}
+
+.welcome-message {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    animation: slideUp 0.5s ease-out 0.7s both;
+}
+
+.welcome-actions {
+    animation: slideUp 0.5s ease-out 0.9s both;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+} 
